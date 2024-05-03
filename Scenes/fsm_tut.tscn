@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://dlrmdgbi55lk0"]
+
+[ext_resource type="PackedScene" uid="uid://3kyur4mu1v5u" path="res://Scenes/level_block.tscn" id="1_nttlv"]
+[ext_resource type="PackedScene" uid="uid://d1ibb8dbxf714" path="res://Scenes/player.tscn" id="2_6g4mh"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_sr80s"]
+scenes/1/scene = ExtResource("1_nttlv")
+
+[sub_resource type="TileSet" id="TileSet_p0h52"]
+tile_size = Vector2i(18, 18)
+sources/2 = SubResource("TileSetScenesCollectionSource_sr80s")
+
+[node name="Fsm Tut" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_p0h52")
+format = 2
+layer_0/tile_data = PackedInt32Array(131072, 2, 65536, 131073, 2, 65536, 131074, 2, 65536, 131075, 2, 65536, 131076, 2, 65536, 131077, 2, 65536)
+
+[node name="Player" parent="." instance=ExtResource("2_6g4mh")]
