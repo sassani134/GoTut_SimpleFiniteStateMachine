@@ -13,5 +13,6 @@ config_version=5
 config/name="GoTut_SimpleFiniteStateMachine"
 config/description="https://www.gotut.net/simple-finite-state-machine-in-godot-4/"
 config/tags=PackedStringArray("tuto")
+run/main_scene="res://Scenes/fsm_tut.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon_color.png.webp"
