@@ -36,7 +36,7 @@ Ce tutoriel est sous licence MIT. Consultez le fichier `LICENSE` pour plus d'inf
 ## Crédits
 
 - Gotut - Pour le tutoriel original sur lequel celui-ci est basé.
-- [Votre nom ici] - Pour avoir reproduit et adapté le tutoriel pour Godot 4.
+- @ssasni134 - Pour avoir reproduit et adapté le tutoriel pour Godot 4.
 
 ---
 
